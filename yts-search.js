@@ -19,9 +19,9 @@ zokou({ nomCom: "yts", categorie: "Search", reaction: "🐅" }, async (dest, zk,
 
     let captions = "";
 for (let i = 0; i < 15; i++) {
-  captions += `𝑩𝒖𝒈𝒂𝒕𝒕𝒊\n${i + 1}. Title: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
+  captions += `Boniphace\n${i + 1}. Title: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
 }
-    captions += "\n======\n*LUCKY MD 𝑩𝒖𝒈𝒂𝒕𝒕𝒊*";
+    captions += "\n======\n*BONIPHACE MD Boniphace*";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
@@ -77,7 +77,7 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "Powered by *Zokou-Md*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "Powered by *BONIPHACE-TECH*", gifPlayback: false }, { quoted: ms });
 
     });
 
